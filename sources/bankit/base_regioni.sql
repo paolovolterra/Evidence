@@ -1,0 +1,8 @@
+SELECT
+  CAST(DATA_OSS AS DATE) AS DATA_OSS,
+  TRIM(NUT)                AS NUT,
+  SUM(VALORE)              AS valore
+FROM TDB10295C
+WHERE length(LOC_CTP) = 4
+GROUP BY 1,2
+ORDER BY 1,2;

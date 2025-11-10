@@ -1,0 +1,7 @@
+﻿node_modules/
+.evidence/
+.env
+dist/
+build/
+.cache/
+.DS_Store
